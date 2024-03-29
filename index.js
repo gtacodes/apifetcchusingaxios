@@ -9,3 +9,12 @@ const getApi=async()=>{
     }
 }
 getApi()
+const fetchApi=async()=>{
+    try {
+        const response=await axios.get('https://www.boredapi.com/api/activity');
+        console.log(response.data);
+    } catch (error) {
+        console.log(error)
+    }
+}
+fetchApi()
